@@ -137,28 +137,40 @@ const App = () => {
       {/* box three */}
 
       <Row minHeight="60vh" backgroundColor={mainGris} alignItems="center" id="project">
-        <Container flex={true}>
-          <Col size="33.33%">
-            <Title size="18px" fontWeight="400" textTransform="uppercase">Mes projets</Title>
-            <SubTitle size="25px">Qu'est ce que j'ai fait ?</SubTitle>
-            <Text lineHeight="1.8">Je suis capable de réaliser n'importe quelle application web que ce soit un e-shop, un site vitrine ou une application plus complexe comme un réseau social.</Text>
-          </Col>
+        <Reveal>
+          <Container flex={true}>
+            <Col size="33.33%">
+              <Title size="18px" fontWeight="400" textTransform="uppercase">Mes projets</Title>
+              <SubTitle size="25px">Qu'est ce que j'ai fait ?</SubTitle>
+              <Text lineHeight="1.8">Je suis capable de réaliser n'importe quelle application web que ce soit un e-shop, un site vitrine ou une application plus complexe comme un réseau social.</Text>
+            </Col>
 
-          <Col size="66.66%">
-            <WrapWidth width="90%" height="100%" center>
-              <Flex alignItems="center" height="100%">
-                <Col size="50%" style={{textAlign: "center"}}>
-                  <Image src={eShop} width="90%"></Image>
-                  <SubTitle size="20px">E-shop</SubTitle>
-                </Col>
-                <Col size="50%" style={{textAlign: "center"}}>
-                  <Image src={sr} width="90%"></Image>
-                  <SubTitle size="20px">Réseau social</SubTitle>
-                </Col>
-              </Flex>
-            </WrapWidth>
-          </Col>
-        </Container>
+            <Col size="66.66%">
+              <WrapWidth width="90%" height="100%" center>
+                <Flex alignItems="center" height="100%">
+                  <Col size="50%" style={{textAlign: "center"}}>
+                    <Image src={eShop} width="90%"></Image>
+                    <SubTitle size="20px" fontWeight="100">E-shop</SubTitle>
+                  </Col>
+                  <Col size="50%" style={{textAlign: "center"}}>
+                    <Image src={sr} width="90%"></Image>
+                    <SubTitle size="20px" fontWeight="100">Réseau social</SubTitle>
+                  </Col>
+                </Flex>
+              </WrapWidth>
+            </Col>
+          </Container>
+        </Reveal>
+      </Row>
+
+      {/* box four */}
+
+      <Row minHeight="40vh" backgroundColor={mainBlue} alignItems="center" id="contact">
+        <Reveal>
+          <Container flex={true}>
+
+          </Container>
+        </Reveal>
       </Row>
 
   </>)
