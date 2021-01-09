@@ -6,4 +6,5 @@ export const SubTitle = styled.h2`
     color: ${props => props.color ? props.color : "black"};
     font-size: ${props => props.size ? props.size : null};
     font-weight: ${props => props.fontWeight ? props.fontWeight : "bold"};
+    text-align: ${props => props.textAlign ? props.textAlign : null};
 `;

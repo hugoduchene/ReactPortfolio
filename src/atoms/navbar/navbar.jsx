@@ -9,7 +9,7 @@ export const BoxNavbar = styled.div`
     `;
 
 const StyledNavItems = styled.a`
-    margin-right: 10px;
+    margin-right: 15px;
     color: #000F6F;
     text-decoration: none;
     font-weight: bolder;

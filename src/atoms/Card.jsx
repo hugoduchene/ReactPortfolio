@@ -7,5 +7,5 @@ export const Card = styled.div`
     min-height: ${props => props.minHeight ? props.minHeight: null};
     height: ${props => props.height ? props.height: "100%"};
     width: ${props => props.width ? props.width: null};
-    border: 1px solid black;
+    border-radius: 5px;
 `;

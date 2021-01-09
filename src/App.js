@@ -7,18 +7,24 @@ import {WrapColor, WrapWidth} from './atoms/Wrap'
 import {SubTitle} from './atoms/SubTitle'
 import {Text} from './atoms/Text'
 import {Card} from './atoms/Card'
+import {Button} from './atoms/Button'
+import {Footer} from './atoms/Footer'
 
 import cvImage from './assets/img/cvImage.svg'
 import eShop from './assets/img/e-shop.gif'
 import sr from './assets/img/sr.gif'
 import {mainBlue, mainGris} from './assets/js/color'
 
-import Fade from 'react-reveal/Fade';
+
 import Reveal from 'react-reveal/Reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
 
   return(<>
+  <div className="content">
     <Navbar 
       titleColor={mainBlue}
       backgroundColor={mainGris}
@@ -26,7 +32,7 @@ const App = () => {
         {arrayLink: [
           {content: "À propos", link: "#about"},
           {content: "Compétences", link: "#skills"},
-          {content: "Projet", link: "#project"},
+          {content: "Projets", link: "#projects"},
           {content: "Contactez-moi", link: "#contact"}
         ],
       },
@@ -38,7 +44,7 @@ const App = () => {
       <Row height="90vh" backgroundColor={mainGris} alignItems="center">
         <Container flex={true}>
           <Col size="50%">
-            <Fade top>
+            <Reveal>
               <div>
                 <SubTitle size="20px">Bonjour je suis <WrapColor color={mainBlue}>développeur.</WrapColor></SubTitle>
                 <SubTitle size="3rem">Hugo Duchêne</SubTitle>
@@ -47,13 +53,13 @@ const App = () => {
                 Et en à peine 3 mois j'ai réussi à être diplomé de la formation développeur d'application python de OpenClassrooms.
                 </Text>
               </div>
-            </Fade>
+            </Reveal>
           </Col>
 
           <Col size="50%" alignItems="center">
-            <Fade top>
+            <Reveal>
               <Image src={cvImage}/>
-            </Fade>
+            </Reveal>
           </Col>
 
         </Container>
@@ -64,22 +70,22 @@ const App = () => {
       <Row minHeight="60vh" backgroundColor={mainBlue} alignItems="center" id="about">
         <Container flex={true}>
           <Col size="50%">
-            <Fade top>
+            <Reveal>
               <WrapWidth width="80%">
                 <Title color="white" size="18px" fontWeight="400" textTransform="uppercase">À propos</Title>
                 <SubTitle color="white" size="25px">Comment ai-je appris ?</SubTitle>
                 <Text color="white" lineHeight="1.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</Text>
               </WrapWidth>
-            </Fade>
+            </Reveal>
           </Col>
 
           <Col size="50%" alignItems="center">
-            <Fade top>
+            <Reveal>
               <WrapWidth width="80%">
                 <SubTitle color="white" size="25px">Pourquoi me choisir ?</SubTitle>
                 <Text color="white" lineHeight="1.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
               </WrapWidth>
-            </Fade>
+            </Reveal>
           </Col>
         </Container>
       </Row>
@@ -95,39 +101,39 @@ const App = () => {
         
           <Container flex={true}>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card paddingLeft="5%" minHeight="20vh" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
+              <Card paddingLeft="5%" minHeight="20vh" marginRight="10px" style={{backgroundColor: mainBlue }} >
                 <SubTitle size="25px" color="white">Python3</SubTitle>
-                <Text color="white" size="15px" lineHeight="1.4">Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet.</Text>
+                <Text size="15px" lineHeight="1.4" color="white">Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
-                <SubTitle size="25px" color="white">Django</SubTitle>
-                <Text width="90%" size="15px" lineHeight="1.4" color="white">Django est un cadre de développement web open source en Python. Il a pour but de rendre le développement web 2.0 simple et rapide. Pour cette raison, le projet a pour slogan "Le framework pour les perfectionnistes avec des deadlines".</Text>
+              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+                <SubTitle size="25px">Django</SubTitle>
+                <Text width="90%" size="15px" lineHeight="1.4">Django est un cadre de développement web open source en Python. Il a pour but de rendre le développement web 2.0 simple et rapide. Pour cette raison, le projet a pour slogan "Le framework pour les perfectionnistes avec des deadlines".</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
-                <SubTitle size="25px" color="white">Django Rest Framework</SubTitle>
-                <Text width="90%" size="15px" lineHeight="1.4" color="white">Le framework Django REST est une boîte à outils puissante et flexible pour la création d'API Web.</Text>
+              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+                <SubTitle size="25px">Django Rest Framework</SubTitle>
+                <Text width="90%" size="15px" lineHeight="1.4">Le framework Django REST est une boîte à outils puissante et flexible pour la création d'API Web.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
-                <SubTitle size="25px" color="white">React.js</SubTitle>
-                <Text width="90%" size="15px" lineHeight="1.4" color="white">React (aussi appelé React.js ou ReactJS) est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage.</Text>
+              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+                <SubTitle size="25px">React.js</SubTitle>
+                <Text width="90%" size="15px" lineHeight="1.4">React (aussi appelé React.js ou ReactJS) est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
-                <SubTitle size="25px" color="white">Next.js</SubTitle>
-                <Text width="90%" size="15px" lineHeight="1.4" color="white">Next.js est un framework Web de développement front-end open-source React qui active des fonctionnalités telles que le rendu côté serveur et la génération de sites Web statiques pour les applications Web basées sur React.</Text>
+              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)"}} >
+                <SubTitle size="25px">Next.js</SubTitle>
+                <Text width="90%" size="15px" lineHeight="1.4">Next.js est un framework Web de développement front-end open-source React qui active des fonctionnalités telles que le rendu côté serveur et la génération de sites Web statiques pour les applications Web basées sur React.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{backgroundColor: mainBlue, boxShadow: "2px 2px 4px black" }} >
-                <SubTitle size="25px" color="white">React Native</SubTitle>
-                <Text width="90%" size="15px" lineHeight="1.4" color="white">React Native est un framework d'applications mobiles open source créé par Facebook. Il est utilisé pour développer des applications pour Android, iOS et UWP.</Text>
+              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+                <SubTitle size="25px" >React Native</SubTitle>
+                <Text width="90%" size="15px" lineHeight="1.4">React Native est un framework d'applications mobiles open source créé par Facebook. Il est utilisé pour développer des applications pour Android, iOS et UWP.</Text>
               </Card>
             </Col>
           </Container>
@@ -136,7 +142,7 @@ const App = () => {
 
       {/* box three */}
 
-      <Row minHeight="60vh" backgroundColor={mainGris} alignItems="center" id="project">
+      <Row minHeight="60vh" backgroundColor={mainGris} alignItems="center" id="projects">
         <Reveal>
           <Container flex={true}>
             <Col size="33.33%">
@@ -167,11 +173,43 @@ const App = () => {
 
       <Row minHeight="40vh" backgroundColor={mainBlue} alignItems="center" id="contact">
         <Reveal>
-          <Container flex={true}>
+          <Container flex={true} flexDirection="column">
+            <Title size="18px" fontWeight="400" textTransform="uppercase" color="white" textAlign="center" style={{paddingBottom: "5%"}}>Contactez-moi</Title>
+            <Flex justifyContent="space-around">
+              
+              <div>
+                <Button as="a" href="https://twitter.com/hugo_duchene" color="white" backgroundColor="#00acee" height="80px" width="80px" alignItems="center" borderRadius="40px">
+                  <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                </Button>
+                <SubTitle textAlign="center" color="white" size="15px" fontWeight="400" style={{paddingTop: "10px"}}>Twitter</SubTitle>
+              </div>
 
+              <Flex flexDirection="column">
+                <Button as="a" color="white" backgroundColor="#FF3939" height="80px" width="80px" alignItems="center" borderRadius="40px">
+                  <FontAwesomeIcon icon={faEnvelope} size="2x"/>
+                </Button>
+                <SubTitle textAlign="center" color="white" size="15px" fontWeight="400" style={{paddingTop: "10px"}}>duchenehugo10@gmail.com</SubTitle>
+              </Flex>
+
+              <div>
+                <Button as="a" href="https://www.linkedin.com/in/hugo-duch%C3%AAne-401b751aa/" color="white" backgroundColor="#2867B2" height="80px" width="80px" alignItems="center" borderRadius="40px">
+                  <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+                </Button>
+                <SubTitle textAlign="center" color="white" size="15px" fontWeight="400" style={{paddingTop: "10px"}}>Linkedin</SubTitle>
+              </div>
+            </Flex>
           </Container>
         </Reveal>
       </Row>
+
+      {/* footer */}
+
+      <Footer backgroundColor={mainBlue} padding="15px" textAlign="center" style={{borderTop: "0.1px solid white"}}>Hugo.dev © 2021</Footer>
+  </div>
+
+  <h1 className="msg-error-mobile" style={{height:"100vh", display: "flex", alignItems:"center", justifyContent: "center"}}>
+      La version mobile de ce portfolio est en cours de développement...
+  </h1>
 
   </>)
 }

@@ -24,6 +24,11 @@ export const Col = styled.div`
 
 export const Flex = styled.div`
     display: flex;
-    align-items: ${props => props.alignItems ? props.alignItems : null};
+    flex-direction: ${props => props.flexDirection ? props.flexDirection : null};
+    justify-content: ${
+        props => props.justifyContent ? props.justifyContent : props.flexDirection ?
+    "center" : null};
+    align-items: ${props => props.alignItems ? props.alignItems : props.flexDirection ?
+    "center" : null};
     height: ${props => props.height ? props.height : null};
 `;
