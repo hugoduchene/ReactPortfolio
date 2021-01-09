@@ -19,7 +19,7 @@ import {mainBlue, mainGris} from './assets/js/color'
 import Reveal from 'react-reveal/Reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
 
@@ -41,7 +41,7 @@ const App = () => {
     
     {/* box one */}
     
-      <Row height="90vh" backgroundColor={mainGris} alignItems="center">
+      <Row height="90vh" backgroundColor={mainGris} alignItems="center" id="firstBox">
         <Container flex={true}>
           <Col size="50%">
             <Reveal>
@@ -50,7 +50,7 @@ const App = () => {
                 <SubTitle size="3rem">Hugo Duchêne</SubTitle>
                 <Text width="90%" lineHeight="1.5">Passionné depuis ma tendre enfance, j'ai commencé à programmer à l'âge de 15 ans 
                 suite à un film qui m'a profondément marqué. À 18 ans j'ai voulu me professionnaliser dans le monde du dévloppement web.
-                Et en à peine 3 mois j'ai réussi à être diplomé de la formation développeur d'application python de OpenClassrooms.
+                En à peine 3 mois j'ai réussi à être diplomé de la formation développeur d'application python de OpenClassrooms.
                 </Text>
               </div>
             </Reveal>
@@ -201,6 +201,23 @@ const App = () => {
           </Container>
         </Reveal>
       </Row>
+
+      {/* button to top */}
+
+      <Button 
+        as="a" 
+        href="#firstBox" 
+        color="black" 
+        width="50px" 
+        height="50px" 
+        alignItems="center" 
+        position="fixed" 
+        right="3%" 
+        bottom="3%"
+        style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)", borderRadius: "25px", backgroundColor: mainGris}}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </Button>
 
       {/* footer */}
 
