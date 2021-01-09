@@ -174,7 +174,9 @@ const App = () => {
       <Row minHeight="40vh" backgroundColor={mainBlue} alignItems="center" id="contact">
         <Reveal>
           <Container flex={true} flexDirection="column">
-            <Title size="18px" fontWeight="400" textTransform="uppercase" color="white" textAlign="center" style={{paddingBottom: "5%"}}>Contactez-moi</Title>
+            <Title size="18px" fontWeight="400" textTransform="uppercase" color="white" textAlign="center" style={{}}>Contactez-moi</Title>
+            <div style={{borderTop: "1px solid white", width:"8%", textAlign: "center", paddingBottom: "5%", margin: "0 auto"}}></div>
+
             <Flex justifyContent="space-around">
               
               <div>
