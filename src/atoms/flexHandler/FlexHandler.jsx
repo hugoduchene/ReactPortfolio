@@ -11,6 +11,10 @@ export const Row = styled.section`
             props.justifyContent : props.flexDirection === "column" && props.alignItems === "center" ?
         "center" : null};
     display: flex;
+
+    @media (max-width: 768px) {
+        padding-bottom: ${props => props.responsivePaddingBottom ? props.responsivePaddingBottom : null};
+      }
 `;
 
 export const Col = styled.div`
@@ -19,7 +23,10 @@ export const Col = styled.div`
     align-items: ${props => props.alignItems ? props.alignItems : null};
     justify-content: ${props => props.justifyContent ? props.justifyContent : props.alignItems ? "center" : null};
     display: ${props => props.justifyContent || props.alignItems ? "flex" : null};
-    flex-direction: ${props => props.justifyContent || props.alignItems ? "column" : null}
+    flex-direction: ${props => props.justifyContent || props.alignItems ? "column" : null};
+    @media (max-width: 768px) {
+        flex: 1 1 100%!important;
+      }
 `;
 
 export const Flex = styled.div`
@@ -31,4 +38,5 @@ export const Flex = styled.div`
     align-items: ${props => props.alignItems ? props.alignItems : props.flexDirection ?
     "center" : null};
     height: ${props => props.height ? props.height : null};
+    width: 100%;
 `;
