@@ -39,7 +39,7 @@ const Navbar = ({arrayNavItems, backgroundColor, titleColor, itemMobile}) => {
             </Container>
         </Wrap>
 
-        {stateModal.modal && <Modal fixed top width="50%" height="100vh" toRight={stateModal.animation ? true : false} backgroundColor={itemMobile.color}>
+        {stateModal.modal && <Modal hiddenMobile fixed top width="50%" height="100vh" toRight={stateModal.animation ? true : false} backgroundColor={itemMobile.color}>
             {arrayNavItems.map((elt, i) => (
                 <NavItems 
                     key={i} 

@@ -12,4 +12,8 @@ export const Modal = styled.div`
     top: ${props => props.top ? "0": null};
     animation: ${props => props.toRight ? slideToRight: slideToLeft} 0.2s forwards;    
     z-index: 1;
+    display: ${props => props.hiddenMobile ? "none" : null};
+    @media (max-width: 768px) {
+        display: ${props => props.hiddenMobile ? "block": null};
+      }
     `;
