@@ -146,7 +146,7 @@ const App = () => {
 
       {/* box three */}
 
-      <Row minHeight="60vh" backgroundColor={mainGris} alignItems="center" id="projects">
+      <Row minHeight="60vh" responsivePaddingBottom="8%" backgroundColor={mainGris} alignItems="center" id="projects">
         <Reveal>
           <Container flex={true}>
             <Col size="33.33%">
