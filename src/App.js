@@ -77,7 +77,8 @@ const App = () => {
               <WrapWidth width="80%" hiddenMobile>
                 <Title color="white" size="18px" fontWeight="400" textTransform="uppercase">À propos</Title>
                 <SubTitle color="white" size="25px">Comment ai-je appris ?</SubTitle>
-                <Text color="white" lineHeight="1.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</Text>
+                <Text color="white" lineHeight="1.5">À l'âge de 15 ans j'ai débuté la programmation en apprenant les bases du développement web sur <WrapStyle fontWeight="bolder" fontStyle="italic">OpenClassrooms</WrapStyle> en passant du sql au php je me suis découvert un réelle passion pour le développement informatique.
+                À 18 ans j'ai souhaité me professionnaliser en certifiant toutes mes connaissances apprises durant mon adolescence en me lançant dans une formation <WrapStyle fontWeight="bolder" fontStyle="italic">OpenClassrooms</WrapStyle> que j'ai réussi en un temps record.</Text>
               </WrapWidth>
             </Reveal>
           </Col>
@@ -86,7 +87,7 @@ const App = () => {
             <Reveal>
               <WrapWidth width="80%" hiddenMobile>
                 <SubTitle color="white" size="25px">Pourquoi me choisir ?</SubTitle>
-                <Text color="white" lineHeight="1.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
+                <Text color="white" lineHeight="1.5">Je suis à disposition pour réaliser n'importe quel projet que ça soit une application mobile ou un site web classique.</Text>
               </WrapWidth>
             </Reveal>
           </Col>
@@ -104,37 +105,37 @@ const App = () => {
         
           <Container flex={true}>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card paddingLeft="5%" minHeight="20vh" marginRight="10px" hiddenMobileMargin style={{backgroundColor: mainBlue }} >
+              <Card alignMobile paddingLeft="5%" minHeight={20} marginRight="10px" hiddenMobileMargin style={{backgroundColor: mainBlue }} >
                 <SubTitle size="25px" color="white">Python3</SubTitle>
                 <Text size="15px" lineHeight="1.4" color="white">Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+              <Card alignMobile minHeight={20} paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
                 <SubTitle size="25px">Django</SubTitle>
                 <Text width="90%" size="15px" lineHeight="1.4">Django est un cadre de développement web open source en Python. Il a pour but de rendre le développement web 2.0 simple et rapide. Pour cette raison, le projet a pour slogan "Le framework pour les perfectionnistes avec des deadlines".</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+              <Card alignMobile minHeight={20} paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
                 <SubTitle size="25px">Django Rest Framework</SubTitle>
                 <Text width="90%" size="15px" lineHeight="1.4">Le framework Django REST est une boîte à outils puissante et flexible pour la création d'API Web.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+              <Card alignMobile minHeight={20} paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
                 <SubTitle size="25px">React.js</SubTitle>
                 <Text width="90%" size="15px" lineHeight="1.4">React (aussi appelé React.js ou ReactJS) est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)"}} >
+              <Card alignMobile minHeight={20} paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)"}} >
                 <SubTitle size="25px">Next.js</SubTitle>
                 <Text width="90%" size="15px" lineHeight="1.4">Next.js est un framework Web de développement front-end open-source React qui active des fonctionnalités telles que le rendu côté serveur et la génération de sites Web statiques pour les applications Web basées sur React.</Text>
               </Card>
             </Col>
             <Col size="33%" justifyContent="center" alignItems="center" style={{paddingBottom: "3%"}}>
-              <Card minHeight="20vh" paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
+              <Card alignMobile minHeight={20} paddingLeft="5%" marginRight="10px" hiddenMobileMargin style={{boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)" }} >
                 <SubTitle size="25px" >React Native</SubTitle>
                 <Text width="90%" size="15px" lineHeight="1.4">React Native est un framework d'applications mobiles open source créé par Facebook. Il est utilisé pour développer des applications pour Android, iOS et UWP.</Text>
               </Card>
@@ -180,7 +181,7 @@ const App = () => {
             <Title size="18px" fontWeight="400" textTransform="uppercase" color="white" textAlign="center" style={{}}>Contactez-moi</Title>
             <div style={{borderTop: "1px solid white", width:"8%", textAlign: "center", paddingBottom: "5%", margin: "0 auto"}}></div>
 
-            <Flex justifyContent="space-around">
+            <Flex justifyContent="space-around" columnMobile>
               
               <Flex flexDirection="column">
                 <Button as="a" href="https://twitter.com/hugo_duchene" color="white" backgroundColor="#00acee" height="80px" width="80px" alignItems="center" borderRadius="40px">

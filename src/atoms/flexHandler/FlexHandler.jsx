@@ -39,4 +39,7 @@ export const Flex = styled.div`
     "center" : null};
     height: ${props => props.height ? props.height : null};
     width: 100%;
+    @media (max-width: 768px) {
+       flex-direction: ${props => props.columnMobile ? "column" : null};
+      }
 `;
