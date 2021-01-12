@@ -2,7 +2,7 @@ import Navbar from './components/Navbar'
 import {Row, Col, Flex} from './atoms/flexHandler/FlexHandler'
 import {Container} from './atoms/Container'
 import {Title} from './atoms/Title'
-import {Image} from './atoms/Image'
+import {Image, StyledImg} from './atoms/Image'
 import {WrapColor, WrapWidth, WrapStyle} from './atoms/Wrap'
 import {SubTitle} from './atoms/SubTitle'
 import {Text} from './atoms/Text'
@@ -61,7 +61,7 @@ const App = () => {
 
           <Col size="50%" alignItems="center">
             <Reveal>
-              <Image src={cvImage} hiddenMobile/>
+              <StyledImg src={cvImage} hiddenMobile/>
             </Reveal>
           </Col>
 
@@ -159,11 +159,11 @@ const App = () => {
               <WrapWidth width="90%" height="100%" hiddenMobile center>
                 <Flex alignItems="center" height="100%">
                   <Col size="50%" style={{textAlign: "center"}}>
-                    <Image src={eShop} width="90%"></Image>
+                    <Image styled={{src: eShop, width: "90%"}}></Image>
                     <SubTitle size="20px" fontWeight="100">E-shop</SubTitle>
                   </Col>
                   <Col size="50%" style={{textAlign: "center"}}>
-                    <Image src={sr} width="90%"></Image>
+                    <Image  link="https://shaready.fr/home" styled={{src: sr, width: "90%"}}></Image>
                     <SubTitle size="20px" fontWeight="100">Réseau social</SubTitle>
                   </Col>
                 </Flex>
