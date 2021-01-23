@@ -14,6 +14,7 @@ import cvImage from './assets/img/cvImage.svg'
 import eShop from './assets/img/e-shop.gif'
 import sr from './assets/img/sr.gif'
 import {mainBlue, mainGris} from './assets/js/color'
+import cvPdf from './assets/img/cvPdf.pdf'
 
 
 import Reveal from 'react-reveal/Reveal';
@@ -55,6 +56,9 @@ const App = () => {
                 suite à un film qui m'a profondément marqué. À 18 ans j'ai voulu me professionnaliser dans le monde du développement web.
                 En à peine 3 mois j'ai réussi à être diplomé de la formation <WrapStyle fontWeight="bolder" fontStyle="italic">développeur d'application python de OpenClassrooms.</WrapStyle>
                 </Text>
+                <div className="button__cv">
+                  <a href={cvPdf} >Mon cv</a>
+                </div>
               </div>
             </Reveal>
           </Col>

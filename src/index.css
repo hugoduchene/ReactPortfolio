@@ -5,18 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*@media screen and (max-width: 850px){
-  .content{
-    display: none;
-  }
-}
-
-@media screen and (min-width: 850px){
-  .msg-error-mobile{
-    display: none!important;
-  }
-}*/
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,4 +16,25 @@ html, body{
 
 .react-reveal{
   width: 100%;
+}
+
+.button__cv{
+  background-color: #000F6F;
+  width: 18ch;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.button__cv:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button__cv a{
+  text-decoration: none;
+  color: white;
 }
