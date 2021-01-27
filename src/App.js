@@ -11,7 +11,7 @@ import {Button} from './atoms/Button'
 import {Footer} from './atoms/Footer'
 
 import cvImage from './assets/img/cvImage.svg'
-import eShop from './assets/img/e-shop.gif'
+import eShop from './assets/img/eshop-car.PNG'
 import sr from './assets/img/sr.gif'
 import {mainBlue, mainGris} from './assets/js/color'
 import cvPdf from './assets/img/cvPdf.pdf'
@@ -163,7 +163,7 @@ const App = () => {
               <WrapWidth width="90%" height="100%" hiddenMobile center>
                 <Flex alignItems="center" height="100%">
                   <Col size="50%" style={{textAlign: "center"}}>
-                    <Image styled={{src: eShop, width: "90%"}}></Image>
+                    <Image link="https://flamboyant-gates-45873b.netlify.app/" styled={{src: eShop, width: "90%"}}></Image>
                     <SubTitle size="20px" fontWeight="100">E-shop</SubTitle>
                   </Col>
                   <Col size="50%" style={{textAlign: "center"}}>
@@ -231,7 +231,7 @@ const App = () => {
 
       {/* footer */}
 
-      <Footer backgroundColor={mainBlue} padding="15px" textAlign="center" style={{borderTop: "0.1px solid white"}}>Hugo.dev © 2021</Footer>
+      <Footer backgroundColor={mainBlue} padding="15px" textAlign="center" style={{borderTop: "0.1px solid white"}}>creator.shaready.fr © 2021</Footer>
   
   </>)
 }
